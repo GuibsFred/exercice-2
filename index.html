@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8" />
-            <link rel="stylesheet" href="style.css" /> 
-            <link rel="stylesheet" media="screen and (max-width: 1000px)" href="mini.css" /> 
-            <title>Frontend Mentor - Order summary card</title>
-        </head>
+<html>
 
-        <body>
-            <div id="conteneur">  
-                       
-                <div id="formulaire">
-                        <div id="illustrer">
-                            
-                        
-                         </div>
-                    <h1>Order Summary</h1>
-                    <h2>You can now listen to millions of songs,<br />
-                    audiobooks, and podcasts and any advice<br />
-                    anywhere you like!</h2>         
-                    
-                    <div id="annual_plan">
-                        
-                        <div id="iconemusique"> 
-                            <p><img src="images/icon-music.svg" alt="logo" /><p>
-                        </div>
-                
-                        <div id="superpose">     
-                            <p><strong>Annual Plan</strong><br />
-                            $55.99/year</p>
-                        </div>
-                        <div id="lien">
-                            <p>
-                                <a href="http://www.google.com">Change</a>
-                            </p>
-                        </div>
-                    </div>   
-                    <div id="paiement">Proceed to Payment</div> 
-                    <div id="test">Cancel order</div>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style-optim.css" />
+    <title>Frontend Mentor - Order summary card</title>
+</head>
+
+<body class="container">
+    <div class="card">
+        <img src="images/illustration-hero.svg"
+            alt="Image d'illustration représentant une personne avec un baladeur numérique" class="illustration">
+
+        <div class="content">
+            <h1>Order Summary</h1>
+
+            <p>
+                You can now listen to millions of songs, audiobooks, and podcasts and any advice anywhere you like!
+            </p>
+
+            <div class="panel">
+                <img src="images/icon-music.svg" alt="Icône représentant une note de musique" class="icon">
+
+                <div class="description">
+                    <h2>Annual plan</h2>
+                    <span>$55.99/year</span>
                 </div>
-            </div>       
-        </body>
-    </html>
+
+                <a href="#change">Change</a>
+            </div>
+        </div>
+
+        <form class="actions">
+            <button type="submit">Proceed to Payment</button>
+            <a href="#cancel" class="cancel">Cancel order</a>
+        </form>
+    </div>
+</body>
+
+</html>
